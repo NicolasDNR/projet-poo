@@ -46,9 +46,9 @@ class Pages extends Controller
   public function backOfficeAnimaux()
   {
 
-    $demandeClient = $this->animalModel->getAnimalReservation();
+    $reservation = $this->animalModel->getAnimalReservation();
     $data = [
-      'demandeClient' => $demandeClient
+      'reservation' => $reservation
     ];
     $this->view('pages/backOfficeAnimaux', $data);
   }

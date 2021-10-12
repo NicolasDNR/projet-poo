@@ -56,7 +56,7 @@ class Animal
     public function getAnimalReservation()
     {
         $this->db->query('SELECT *
-                            FROM demandeClient
+                            FROM reservation
                             ORDER BY dateAjout DESC');
         $result = $this->db->resultSet();
 
@@ -81,7 +81,7 @@ class Animal
 
     public function addReservation($data)
     {
-        $this->db->query('INSERT INTO demandeClient(id_animal, contact, text) VALUES (:id_animal, :contact, :text)');
+        $this->db->query('INSERT INTO reservation(id_animal, contact, text) VALUES (:id_animal, :contact, :text)');
         $this->db->bind(':id_animal', $data['id_animal']);
         $this->db->bind(':contact', $_SESSION['email']);
         $this->db->bind(':text', $data['text']);

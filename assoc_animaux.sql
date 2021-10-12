@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 12, 2021 at 07:26 PM
+-- Generation Time: Oct 12, 2021 at 07:56 PM
 -- Server version: 5.7.35
 -- PHP Version: 8.0.11
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `asso_animaux`
+-- Database: `assoc_animaux`
 --
 
 -- --------------------------------------------------------
@@ -60,11 +60,11 @@ INSERT INTO `animals` (`id`, `nom`, `description`, `age`, `dateAjout`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `demandeclient`
+-- Table structure for table `reservation`
 --
 
-DROP TABLE IF EXISTS `demandeclient`;
-CREATE TABLE IF NOT EXISTS `demandeclient` (
+DROP TABLE IF EXISTS `reservation`;
+CREATE TABLE IF NOT EXISTS `reservation` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_animal` int(11) NOT NULL,
   `contact` varchar(255) NOT NULL,
@@ -74,10 +74,10 @@ CREATE TABLE IF NOT EXISTS `demandeclient` (
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `demandeclient`
+-- Dumping data for table `reservation`
 --
 
-INSERT INTO `demandeclient` (`id`, `id_animal`, `contact`, `text`, `dateAjout`) VALUES
+INSERT INTO `reservation` (`id`, `id_animal`, `contact`, `text`, `dateAjout`) VALUES
 (4, 13, 'azerty@mail.com', 'je le veux', '2021-10-12 21:25:19'),
 (3, 13, 'azerty@mail.com', 'je voudrais reservÃ© ce ct animal', '2021-10-12 15:14:43');
 
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `role` int(11) NOT NULL DEFAULT '0' COMMENT '0 = user et 1 = admin',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
