@@ -9,7 +9,11 @@
         <h2 class="card-text"><?php echo  $data['animal']->nom; ?></h2>
     </div>
     <p class="card-body">
+        Description :<br>
         <?php echo  $data['animal']->description; ?>
+    </p>
+    <p class="card-body">
+        age : <?php echo  $data['animal']->age; ?> ans
     </p>
     <p class="card-title bg-light p-2 mb-3">
         Ajouté le <?php echo  $data['animal']->dateAjout; ?>
