@@ -11,10 +11,10 @@ pwd: azerty11
 Objectif: Créer un site pour une association d'animaux
 
 Le site doit contenir: 
-    . une page d'accueil présentant les derniers animaux arrivés à l'association (les 10 derniers ou ceux arrivés au cours des 30 derniers jours)
-    . une page présentant tous les animaux disponible (uniquement disponible)
-    . une page d'un animal présentant les informations de l'animal et un formulaire de contact pour obtenir des informations ou le réserver.
-    . une page admin permettant de gérer les animaux (en ajouter, mettre des animaux en réservés, modifier leur fiche)
+    - une page d'accueil présentant les derniers animaux arrivés à l'association (les 10 derniers ou ceux arrivés au cours des 30 derniers jours)
+    - une page présentant tous les animaux disponible (uniquement disponible)
+    - une page d'un animal présentant les informations de l'animal et un formulaire de contact pour obtenir des informations ou le réserver.
+    - une page admin permettant de gérer les animaux (en ajouter, mettre des animaux en réservés, modifier leur fiche)
 
 L'admin doit donc pouvoir se connecter et ajouter d'autres admin.
 L'utilisation de la session est donc incontournable.
